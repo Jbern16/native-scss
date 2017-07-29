@@ -1,0 +1,92 @@
+#listicle-container{
+  width: 1024px; margin: 0 auto;
+  padding-top: 50px;
+
+  h1, h3, p {
+    text-align: center; width: 75%; margin: 0 auto; font-family: 'Roboto Slab', serif;
+    color: $altBlack;
+  }
+
+  h1 {
+    margin-bottom: 20px; font-size: 35px; line-height: 45px; text-transform: uppercase;
+    color: $altBlack; font-weight: 500;
+  }
+  h3 {
+    margin-bottom: 20px; color: $lightGray; text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  p {
+    font-size: 18px; line-height: 29px; margin-bottom: 10px;
+
+    .inline-link { font-family: 'Roboto Slab', serif; color: $green;}
+  }
+  .final-text { font-style: italic; margin: 20px auto;}
+  .final-cta {
+    font-weight: bold; font-style: italic; text-align: center;
+    display: block; margin: 30px 0; font-size: 26px;
+  }
+
+  .list-items-container {
+    margin: 75px 0 50px 0;
+
+    .single-item {
+      margin-bottom: 35px;
+      img {width: 50%; float: left;}
+      twitterwidget {width: 50%; float: left;}
+      .text-container {
+        width: 45%; float: right; margin-top: 40px;
+        p {
+          text-align: left; width: 100%; margin: 0;
+          &.title {font-size: 26px; margin-bottom: 20px;}
+          &.text {
+            font-size: 16px;
+            line-height: 26px;
+            color: $altBlack;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  #listicle-container{
+    width: 100%; padding-top: 15px;
+
+    h1 {
+      margin-bottom: 25px; font-size: 23px; line-height: 30px;
+      width: 90%;
+    }
+
+    p {
+      width: 90%;
+      font-size: 17px; line-height: 24px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 14px; line-height: 22px; width: 100%;
+    }
+
+    .list-items-container {
+      width: 90%; margin: 75px auto 40px auto;
+
+      .single-item {
+        margin-bottom: 40px;
+        twitterwidget {width: 100%; float: none;}
+        img {width: 100%; float: none;}
+        .text-container {
+          width: 95%; float: none; margin: 10px auto 0 auto;
+          p {
+            text-align: left; width: 100%; margin: 0;
+            &.title {font-size: 24px; line-height: 30px; margin-bottom: 20px;}
+            &.text { font-size: 18px; line-height: 26px;}
+          }
+        }
+      }
+    }
+
+  }
+}
