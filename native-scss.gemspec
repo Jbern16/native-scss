@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{SCSS Templates for native}
   spec.description   = %q{Overwriteable styles for quick configuraton}
-  spec.homepage      = %q{"https://github.com/Jbern16/native-scss"}
+  spec.homepage      = %q{https://github.com/Jbern16/native-scss}
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
